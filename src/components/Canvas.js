@@ -438,7 +438,7 @@ function Canvas({ pendulum_list, graph_list }) {
               ref={(el) => (canvasrefs.current[idx] = el)}
               key={idx}
             />
-            <form method="post" action="http://localhost:8000/remove" className="removegraph">
+            <form method="post" action="https://leader282937.pythonanywhere.com/remove" className="removegraph">
               <CSRFToken />
               <input type="hidden" value={graph_list[idx].axis_l + ":" + graph_list[idx].axis_b} name="graph" />
               <button type="submit" className="fa-button">
@@ -454,7 +454,7 @@ function Canvas({ pendulum_list, graph_list }) {
       })}
       <form
         method="post"
-        action="http://localhost:8000/graph"
+        action="https://leader282937.pythonanywhere.com/graph"
         className="addgraph"
       >
         <label className="form-label" htmlFor="ax1">

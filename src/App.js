@@ -12,14 +12,14 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/")
+      .get("https://leader282937.pythonanywhere.com")
       .then((res) => {
         setPendulum_list(res.data);
       })
       .catch((err) => {});
 
     axios
-      .get("http://localhost:8000/graph")
+      .get("https://leader282937.pythonanywhere.com/graph")
       .then((res) => {
         setGraph_list(res.data);
       })
@@ -31,7 +31,7 @@ function App() {
       {pendulum_list.length > 0 && <Canvas pendulum_list={pendulum_list} graph_list={graph_list} />}
       {pendulum_list.length == 0 && <div class="dummy"></div>}
       <div className="forms">
-        <form method="post" action="http://localhost:8000/delete">
+        <form method="post" action="https://leader282937.pythonanywhere.com/delete">
           <CSRFToken />
           <h3>Delete a Pendulum</h3>
           <hr />
@@ -55,7 +55,7 @@ function App() {
             Submit
           </button>
         </form>
-        <form method="post" action="http://localhost:8000/">
+        <form method="post" action="https://leader282937.pythonanywhere.com/">
           <CSRFToken />
           <h3>Pendulum Upper Part</h3>
           <hr />
