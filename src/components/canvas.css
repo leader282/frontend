@@ -1,0 +1,50 @@
+canvas {
+  margin-bottom: -80px;
+}
+
+.canvases {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+  padding-left: 200px;
+}
+
+.fa-plus:hover {
+  -webkit-animation: fa-beat 0.5s infinite linear;
+  -moz-animation: fa-beat 0.5s infinite linear;
+  -o-animation: fa-beat 0.5s infinite linear;
+  animation: fa-beat 0.5s infinite linear;
+  cursor: pointer;
+}
+
+.fa-minus:hover {
+  -webkit-animation: fa-spin 1s infinite linear;
+  -moz-animation: fa-spin 1s infinite linear;
+  -o-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+  cursor: pointer;
+}
+
+.fa-button {
+  background: none;
+  padding: 0px;
+  border: none;
+}
+
+.addgraph {
+  margin-left: 250px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.removegraph {
+  margin-left: -300px;
+}
+
+.graph {
+  display: flex;
+  flex-direction: row;
+}
